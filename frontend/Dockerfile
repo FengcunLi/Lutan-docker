@@ -1,6 +1,6 @@
 FROM node:12-buster-slim
 
-RUN sed -i 's#http://deb.debian.org#http://mirrors.aliyun.com#g' /etc/apt/sources.list
+# RUN sed -i 's#http://deb.debian.org#http://mirrors.aliyun.com#g' /etc/apt/sources.list
 
 COPY ./ /
 WORKDIR /

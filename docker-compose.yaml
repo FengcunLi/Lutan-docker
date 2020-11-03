@@ -23,7 +23,7 @@ services:
       - POSTGRES_HOST=postgres
       - TZ=Asia/Shanghai
       - DJANGO_SETTINGS_MODULE=Lutan.settings.production
-      - ALLOWED_HOST=frontend
+      - ALLOWED_HOST=www.lutan.tech
     # ports:
     #   - "8000:8000"
     depends_on:
