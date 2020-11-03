@@ -1,5 +1,7 @@
 FROM python:3.8.6-slim-buster
 
+RUN sed -i 's#http://deb.debian.org#http://mirrors.aliyun.com#g' /etc/apt/sources.list
+
 RUN apt-get update \
     && apt-get install -y gcc libpq-dev git postgresql-client \
     && apt-get clean \
