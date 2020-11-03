@@ -11,4 +11,5 @@ RUN apt-get update \
 RUN git clone https://github.com/FengcunLi/Lutan-backend.git
 
 WORKDIR /Lutan-backend
-RUN pip3 install -r requirements.txt -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com --no-cache-dir
+# RUN pip3 install -r requirements.txt -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com --no-cache-dir
+RUN pip3 install -r requirements.txt
