@@ -22,6 +22,8 @@ services:
       - POSTGRES_DB=lutan
       - POSTGRES_HOST=postgres
       - TZ=Asia/Shanghai
+      - DJANGO_SETTINGS_MODULE=Lutan.settings.production
+      - ALLOWED_HOST=frontend
     # ports:
     #   - "8000:8000"
     depends_on:
@@ -45,7 +47,7 @@ services:
     environment:
       - TZ=Asia/Shanghai
     ports:
-      - "8080:80"
+      - "80:80"
     depends_on:
       - backend
     volumes:
